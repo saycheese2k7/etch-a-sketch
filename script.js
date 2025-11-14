@@ -10,3 +10,16 @@ if(typeof preferredGrid !== 'number' || preferredGrid <= 1 || preferredGrid >= 6
 
 takenGrid = parseInt(preferredGrid);
 
+const verticalCont = document.getElementById('vertcontainer')
+
+for(let i = 0; i <= takenGrid; i++){
+    const horizontalDiv = document.createElement('div')
+    horizontalDiv.classList.add('hrzdiv')
+    horizontalDiv.style.display('inline-block')
+    horizontalDiv.style.padding('5px')
+    horizontalDiv.style.
+
+    verticalCont.appendChild(horizontalDiv)
+}
+
+//repeat this process to create another dimension on this. use the takengrid variable as counter.
