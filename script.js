@@ -16,7 +16,7 @@ for(let i = 0; i < takenGrid; i++){
     let horizontalDiv = document.createElement('div')
     horizontalDiv.classList.add('hrzdiv')
     horizontalDiv.style.display = 'flex'
-    horizontalDiv.style.flexDirection = 'row'
+    horizontalDiv.style.flexDirection = 'column'
     horizontalDiv.style.flex = '1'
     horizontalDiv.style.gap = '0'
     horizontalDiv.style.justifyContent = 'space-between'
@@ -26,4 +26,23 @@ for(let i = 0; i < takenGrid; i++){
     verticalCont.appendChild(horizontalDiv)
 }
 
-//repeat this process to create another dimension on this. use the takengrid variable as counter.
+
+const horizontalConts = document.querySelectorAll('.hrzdiv')
+
+horizontalConts.forEach((horizontalCont) => {
+
+for(let j = 0; j < takenGrid; j++){
+
+    let verticalDiv = document.createElement('div')
+    verticalDiv.classList.add('hrzdiv')
+    verticalDiv.style.display = 'flex'
+    verticalDiv.style.flexDirection = 'column'
+    verticalDiv.style.flex = '1'
+    verticalDiv.style.gap = '0'
+    verticalDiv.style.justifyContent = 'space-between'
+    verticalDiv.style.height = '20px'
+
+
+    horizontalCont.appendChild(verticalDiv)
+};
+});
