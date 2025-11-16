@@ -13,14 +13,14 @@ takenGrid = parseInt(preferredGrid);
 const verticalCont = document.getElementById('mainbox')
 
 for(let i = 0; i < takenGrid; i++){
-    let horizontalDiv = document.createElement('div')
-    horizontalDiv.classList.add('hrzdiv')
-    horizontalDiv.style.display = 'flex'
-    horizontalDiv.style.flexDirection = 'column'
-    horizontalDiv.style.flex = '1'
-    horizontalDiv.style.gap = '0'
-    horizontalDiv.style.justifyContent = 'space-between'
-    horizontalDiv.style.height = '20px'
+    let horizontalDiv = document.createElement('div');
+    horizontalDiv.classList.add('hrzdiv');
+    horizontalDiv.style.display = 'flex';
+    horizontalDiv.style.flexDirection = 'column';
+    horizontalDiv.style.flex = '1';
+    horizontalDiv.style.gap = '0';
+    horizontalDiv.style.justifyContent = 'space-between';
+    horizontalDiv.style.height = 'calc(100%/$(takenGrid))';
 
 
     verticalCont.appendChild(horizontalDiv)
