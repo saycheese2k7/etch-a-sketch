@@ -19,9 +19,8 @@ for(let i = 0; i < takenGrid; i++){
     horizontalDiv.style.flexDirection = 'column';
     horizontalDiv.style.flex = '1';
     horizontalDiv.style.gap = '0';
-    horizontalDiv.style.justifyContent = 'space-between';
-    horizontalDiv.style.height = 'calc(100%/$(takenGrid))';
-
+    horizontalDiv.style.justifyContent = 'center';
+    horizontalDiv.style.alignItems = 'center';
 
     verticalCont.appendChild(horizontalDiv)
 }
@@ -33,15 +32,14 @@ horizontalConts.forEach((horizontalCont) => {
 
 for(let j = 0; j < takenGrid; j++){
 
-    let verticalDiv = document.createElement('div')
-    verticalDiv.classList.add('hrzdiv')
-    verticalDiv.style.display = 'flex'
-    verticalDiv.style.flexDirection = 'column'
-    verticalDiv.style.flex = '1'
-    verticalDiv.style.gap = '0'
-    verticalDiv.style.justifyContent = 'space-between'
-    verticalDiv.style.height = '20px'
-
+    let verticalDiv = document.createElement('div');
+    verticalDiv.classList.add('vrtdiv');
+    verticalDiv.style.display = 'flex';
+    verticalDiv.style.flexDirection = 'row';
+    verticalDiv.style.flex = '1';
+    verticalDiv.style.gap = '0';
+    verticalDiv.style.justifyContent = 'center';
+    verticalDiv.style.alignItems = 'center';
 
     horizontalCont.appendChild(verticalDiv)
 };

@@ -1,5 +1,14 @@
+
+:root {
+    --grid-width: 50px;
+    --grid-height: 50px;
+}
+
 div{
     border: 0.1px solid black;
+    box-sizing: border-box;
+    width: var(--grid-width);
+    height: var(--grid-height);
 }
 
 main{
